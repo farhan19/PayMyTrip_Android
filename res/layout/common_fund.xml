@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/default_dialog_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/CFTourNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="5dp"
+        android:text="TOUR NAME"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext_bg"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Spinner
+            android:id="@+id/CFNameSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:layout_weight=".1" />
+
+        <TextView
+            android:id="@+id/dropdownArrowinSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:layout_weight=".9"
+            android:drawableRight="@drawable/down_arrow_green" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/CFAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_bg"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/FundAddBtn"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/green_rect_button"
+        android:text="Add"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
